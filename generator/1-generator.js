@@ -71,7 +71,8 @@ function* g2() {
      * iterable
      *  - 반복 가능한 객체
      *  - Symbol.iterator 속성값으로 함수를 갖고 있다.
-     *  - 해당 함수를 호출하면 iterator 를 반환환     */
+     *  - 해당 함수를 호출하면 iterator 를 반환함
+     */
     // 제너레이터 함수 내에서 다른 제너레이터 함수 또는 iterable 객체를 호출할 떄에는 yield* 키워드를 사용
     yield 1;
     yield* g1();    // [ 2 , 3 ]
